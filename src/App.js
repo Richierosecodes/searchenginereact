@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import SearchEngine from "./SearchEngine";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default function App () {
+  return(
+    <StrictMode>
+    <h1>Search Engine App</h1>
+    <SearchEngine />
+    <small>This project was coded by <a href="https://github.com/Richierosecodes?tab=repositories">Rose Akintobi</a> and open-sourced on <a href="https://r.search.yahoo.com/_ylt=AwrijcJdxSJlidgyiS9XNyoA;_ylu=Y29sbwNiZjEEcG9zAzEEdnRpZANTWUMyNjA3OVRfMQRzZWMDc3I-/RV=2/RE=1696806365/RO=10/RU=https%3a%2f%2fwww.netlify.com%2f/RK=2/RS=nCgDGGJoT5HGOM3Y09jD5Hs1fME-">Netlify</a></small>
+  </StrictMode>
+  
+
+  )
 }
 
-export default App;
+const rootElement = document.getElementById ("root");
+const root = createRoot(rootElement);
+
+root.render(
+ 
+  
+);
+
+
